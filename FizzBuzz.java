@@ -7,18 +7,20 @@ class FizzBuzz{
 	int number =sc.nextInt();
 
 	if(number>0){
-		if(number%5==0 && number%3==0){
-                        System.out.print("FizzBuzz");
+	  for(int i=1;i<=number;i++){
+		if(i%5==0 && i%3==0){
+                        System.out.println(i + "= FizzBuzz");
 		}
-		else if(number%3==0){
-			System.out.print("Fizz");
+		else if(i%3==0){
+			System.out.println(i +" Fizz");
 		}
-		else if(number%5==0){
-			System.out.print("Buzz");
+		else if(i%5==0){
+			System.out.println(i + " Buzz");
 		}
 		else{
-			System.out.print(number);
+			System.out.println(i + " ");
 		}
+	   }
 	}
 	else{
 		System.out.print("Not a positive integer");
