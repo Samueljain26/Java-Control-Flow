@@ -8,7 +8,7 @@ class Multiples {
 
         if (number > 0 && number < 100) {
             System.out.println("Multiples of " + number + " below 100 are:");
-            for (int i = 100; i >= 1; i--) {
+            for (int i = 99; i >= 1; i--) {
                 if (i % number == 0) {
                     System.out.println(i);
                 }
